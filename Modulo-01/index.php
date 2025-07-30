@@ -61,6 +61,29 @@
 
 
 // Exemplo de Float
+// NUMEROS DECIMAIS EM PHP
+$altura = 1;
+$altura = 1.0;
 
-$altura = 1
-$altura = 1.75
+$num1 = 2.00;
+$num2 = 2.50;
+
+// echo 'Multiplicação: '.($num1*$num2);
+// echo '<br />';
+// echo 'Adição: '.($num1+$num2);
+// echo '<br />';
+// echo 'Subtração: '.($num1 - $num2);
+// echo '<br />';
+// echo 'Divisão: '.($num1/$num2);
+
+// Função de Arredondamento
+// round()
+//$num3 = 2.40;
+//echo 'Arredondamento com round: '.round($num3);
+
+// Função de Arredondamento para baixo --> floor()
+//echo 'Arredondamento com floor: '.floor($num3);
+
+// Função que Arredonda para cima --> ceil() 
+$num3 = 4.0001;
+echo 'Arredondamento com ceil: '.ceil($num3);
