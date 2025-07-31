@@ -1,30 +1,43 @@
 <?php
 
-$nome = array("Pedro", "Maria", "Cleuza");
+// EXERCICIO 1
+$cidades = ["RJ", "SP", "NY", "TO"];
+echo $cidades[2];
+echo "<br />";
+echo "<br />";
 
-$numeros = [1,  2, 30];
 
-$carros = [
-    "Alessandro" => 1,
-    "Maria" => 2,
-    "Pedro" => 30
+
+// EXERCICIO 2
+$alunos = [
+    "Pedro" => 12,
+    "Maria" => 12,
+    "Cleuza" => 16,
+    "Chrystian" => 17
 ];
+echo $alunos["Cleuza"];
+echo "<br />";
+echo "<br />";
 
-$informacoes = [
-    "Alessandro" => [
-        "carros" => 1,
-        "idade" => 30,
-        "altura" => 1.74,
-        "cidade" => "Rio De Janeiro"
-    ],
-    "Maria" => [
-        "carros" => 2,
-        "idade" => 25,
-        "altura" => 1.64,
-        "cidade" => "São Paulo"
-    ]
+
+
+// EXERCICIO 3
+$cores = ["Vermelho", "Azul", "Branco"];
+array_push($cores, "Marrom");
+array_shift($cores);
+print_r($cores);
+echo "<br />";
+echo "<br />";
+
+
+
+// EXERCICIO 4
+$precos = [
+    "Teclado" => 42,90,
+    "Mouse" => 32,50,
+    "CPU" => 300,
+    "Monitor" => 750
 ];
-
-echo '<pre>';
-var_dump($informacoes["Alessandro"]["carros"]);
-echo '<pre>';
+$precos["CPU"] += 10; //Adicionando Mais R$10
+$precos["Teclado"] += 1; // Removi R$1 Real 
+print_r($precos);
